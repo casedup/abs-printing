@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500..600&family=Lato:wght@300..900&family=Noto+Sans+JP&family=Rubik:wght@800&display=swap');
+
+
+  /************ Desktop/Default Styling **************/
+/* a {
+    text-decoration: none;
+  }
+
+
+  u {
+      color: #000;
+  }
+  .anim {
+    animation: jiggle 5s ease-in-out infinite;
+  }
+
+
+body {
+    background-image:  linear-gradient(to top, rgba(191, 219, 247, 0.1),rgba(2, 43, 58, .05)), url(/img/abs.png) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-size: cover;
+    
+    color: #3B3B3B;
+    font-family: 'Abel', sans-serif;
+  }
+
+  .contact {
+    display: flex;
+    align-items:center;
+}
+
+  .contact-us {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      
+      
+  }
+
+  .contact-details {
+    width: 28vw;
+    border-radius: 5px;
+    background: rgba(191, 219, 247, 0.75);
+    padding: 0px 5px;
+    color: #022b3a;
+    text-shadow: 2px 2px rgba(225, 229, 242, 0.75);
+    animation: 1.4s ease-in-out 2.5s fadein forwards;
+    opacity: 0.0;
+    text-align: center;
+    
+  }
+
+  div.contact-details {
+    transition: color 3s, font 1.4s linear .3s, padding 1s ease-in-out, border-radius 1.3s ease-in .3s;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    
+
+  }
+
+  div.contact-details:hover {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+
+  div.contact-details:nth-child(odd) {
+     background-color: #ffffff;
+  }
+  h1, h2 {
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0px;
+    background: linear-gradient(rgba(191,219,247,0.8), rgba(255, 255, 255, 0.55));
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: left;
+  }
+
+  
+  #header {
+    opacity: 0;
+    margin: 10vw auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 800px;
+    height: 35vh;
+    animation: 1.3s slidefade .3s linear forwards;
+  }
+  
+  #logo h1 {
+    
+    line-height: 170px;
+    letter-spacing: -2px;
+    font-size: 6em;
+    text-shadow: 2px 2px rgba(0, 0, 0, .5);
+    transition: font-size 1.2s ease-in, color 2s ease-in-out;
+  } */
+  
+  .card {
+    border: 1px solid black;
+  }
+
+  /************ wide screen animation **************/
+@keyframes fadein {
+    25% {
+        opacity: .35;
+    }
+    50% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes slidefade {
+    0% {
+        opacity: .2;
+        
+    }
+
+    25% {
+        opacity: .5;
+    }
+
+    55% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+        margin: 5vh auto;
+        /* background-color: rgba(2, 43, 58, .3); */
+    }
+}
+
+/************ Media Query *************/
+
+@media screen and (max-width: 930px) {
+
+    body {
+        
+        background-image:  linear-gradient(to bottom, rgba(148, 153, 158, 0.33),rgba(2, 43, 58, .28)),
+            url(/img/abs.png);
+    }
+    .contact-us {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-content: flex-end;
+        align-items: center;
+    }
+    div.contact-details {
+        background: #022b3a;
+
+        padding: 0px 5px;
+        color: rgba(191, 219, 247, 0.75);
+        text-shadow: .4px .4px rgba(0, 0, 0, 0.8);
+        margin-top: 5vh;
+        animation: 2s fadein linear  2s  forwards;
+        opacity: 0;
+        
+    }
+    #logo h1 {
+        color:rgba(2, 43, 58, 1);
+        text-shadow: 2px 2px rgba(191, 219, 247, 0.75);
+        font-family: 'Azeret Mono', monospace;
+        
+      }
+
+    #header {
+        
+        font-size: smaller;
+        opacity: 0;
+        margin:  14px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 48vh;
+        animation: 2s slidefade .3s ease-in forwards;
+      }
+
+
+      @keyframes fadein {
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slidefade {
+    
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 1;
+            margin: 15px auto;
+        }
+    }
+}
+
+
+  /* @keyframes jiggle {
+    48%, 65% {
+      transform: scale(1.0, 1.0)
+    }
+    49% {
+      transform: scale(1.1, 0.9)
+    }
+    55% {
+      transform: scale(0.9, 1.1) translate(0, -5px)
+    }
+    59% {
+      transform: scale(1.0, 1.0) translate(0, -3px)
+    }
+  } */
+
+
+  #threeColumns {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0px auto;
+    padding: 30px 30px;
+    
+    background: rgba(255, 255, 255, 0.36);
+  } 
+  
+   #threeColumns h2 {
+    padding: 0px 9px 20px 0px;
+    font-size: 50px;
+    letter-spacing: -1px;
+  }
+  
+  #threeColumns #column1 {
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+  }
+  
+  #threeColumns #column2 {
+    float: left;
+    width: 300px;
+  }
+  
+  #threeColumns #column3 {
+    float: right;
+    width: 300px;
+  }
+
+  /* .btn {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 3px hsla(0, 0%, 0%, .6);
+    width: 8em;
+    padding: 1em;
+    color: hsla(255, 255%, 255%, 1);
+    text-align: center;
+    text-shadow: 0 2px 0 hsla(0, 0%, 0%, .25);
+    font: 400 1em /1 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    background: hsla(155, 95%, 35%, 1);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    
+  } */
