@@ -48,8 +48,15 @@
               <p class="lead">Your <em>One-Stop Printer</em> for <strong>Office and Business Forms</strong> and all of your other printing needs.</p>
               <br>
               <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Contact Us</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Directions</button>
+
+
+
+                <a id="contact" type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" href="mailto:340absprinting@gmail.com?subject=ABS Printing Website Inquiry">Contact Us</a>
+                <button id="directions" type="button" class="btn btn-outline-secondary btn-lg px-4">Directions</button>
+
+
+                <div id="mapholder"></div>
+
               </div>  
               <hr>
               <p class="lead">
@@ -159,7 +166,50 @@
                 </div>
               </div>
           </div>
+        </div>
     </section>
+
+
+    <script>
+      const x = document.getElementById("mapholder");
+      const a = document.getElementById("contact");
+      const b = document.getElementById("directions")
+      b.addEventListener('click', getLocation);
+      
+      function getLocation() {
+        try {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } catch {
+          x.innerHTML = err;
+        }
+      }
+      
+      function showPosition(position) {
+          let latlon = position.coords.latitude + "," + position.coords.longitude;
+        
+          let img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=17&size=400x300&sensor=false&key=AIzaSyCdyBGbzVhapHzqB0Z36fPwifM2kntO_tc";
+          b.style.display = 'none';
+          a.style.display = 'none';
+          x.style.display = 'block';
+          x.innerHTML = `<br><img src="${img_url}">`;
+          setTimeout(function() {
+
+            console.log("inside timeout");
+            b.style.display = 'block';
+            a.style.display = 'block';
+            x.style.display = 'none';
+            console.log("showing");
+
+          }, 5000);
+          
+
+
+
+
+
+
+        }
+      </script>
 
 </body>
 
