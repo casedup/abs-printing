@@ -61,6 +61,17 @@ a.navbar-brand {
   -moz-user-select: none;
   user-select: none;
 }
+img.hero-image {
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto;
+  height: 70vh;
+  width: 35vw;
+
+}
 h1 {
   text-align: center;
 }
