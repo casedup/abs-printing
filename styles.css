@@ -37,6 +37,10 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+h4.display-5 {
+  text-decoration: underline;
+  text-decoration-thickness: 5%;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;

@@ -146,23 +146,23 @@
             <div class="row text-center">
               <div class="col-sm-4">
                 <div class="thumbnail">
-                  <img src="./img/small-bg-1.jpg" class="img-thumbnail" alt="obit">
-                  <p><strong>Obituraries</strong></p>
-                  <p>We have years of experience.</p>
+                  <img id="bro" src="./img/brother-front.jpg" class="img-thumbnail" alt="ABS Obituary 1">
+                  <h4 class="display-5 fw-normal">Obituraries</h3>
+                  <p class="lead">We have years of experience.</p>
                 </div>
               </div>
               <div class="col-sm-4">
                 <div class="thumbnail">
-                  <img src="./img/lady-obit-1.jpg" class=" img-thumbnail" alt="New York">
-                  <p><strong>Business Cards</strong></p>
-                  <p>We offer custom designs for your business!</p>
+                  <img src="./img/lady-obit-1.jpg" class=" img-thumbnail" alt="ABS Obituary 2">
+                  <h4 class="display-5 fw-normal">Business Cards</h4>
+                  <p class="lead">We offer custom designs for your business!</p>
                 </div>
               </div>
               <div class="col-sm-4">
                 <div class="thumbnail">
-                  <img src="./img/bg-clock-1.jpg" class="img-thumbnail" alt="San Francisco">
-                  <p><strong>Event Flyers</strong></p>
-                  <p>Let your advertisements POP the way they should.</p>
+                  <img src="./img/bg-clock-1.jpg" class="img-thumbnail" alt="ABS Clock Tower Photo">
+                  <h4 class="display-5 fw-normal">Event Flyers</h4>
+                  <p class="lead">Let your advertisements POP the way they should.</p>
                 </div>
               </div>
           </div>
@@ -201,14 +201,18 @@
             console.log("showing");
 
           }, 5000);
-          
-
-
-
-
-
 
         }
+
+        
+
+        setInterval(() => {
+          let bro = document.getElementById("bro");
+          bro.alt == "set" ? bro.src = "./img/brother-back.jpg" : bro.src = "./img/brother-front.jpg";
+          bro.alt == "set" ? bro.alt = "unset" : bro.alt = "set";
+          console.log(bro.src);
+
+        }, 10000);
       </script>
 
 </body>
