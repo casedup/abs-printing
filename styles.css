@@ -40,6 +40,7 @@ q:before, q:after {
 h4.display-5 {
   text-decoration: underline;
   text-decoration-thickness: 5%;
+  margin-bottom: 10px;
 }
 table {
 	border-collapse: collapse;
@@ -69,11 +70,11 @@ img.hero-image {
   padding: .25rem;
   background-color: #fff;
   border: 1px solid #dee2e6;
-  border-radius: .25rem;
-  max-width: 100%;
+  border-radius: .28rem;
   height: auto;
   height: 70vh;
-  width: 35vw;
+  width: 40vw;
+  margin-right: 10px;
 
 }
 h1 {
