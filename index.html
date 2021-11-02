@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>ABS Printing</title>
     <link rel="stylesheet" href="styles.css">
+    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
@@ -185,7 +187,7 @@
         </div>
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
       const x = document.getElementById("mapholder");
       const a = document.getElementById("contact");
@@ -195,13 +197,32 @@
       function getLocation() {
         try {
           navigator.geolocation.getCurrentPosition(showPosition);
+          console.log(showPosition);
         } catch {
           x.innerHTML = err;
         }
       }
       
       function showPosition(position) {
+
+          
           let latlon = position.coords.latitude + "," + position.coords.longitude;
+
+          var axios = require('axios');
+
+          var config = {
+            method: 'get',
+            url: 'https://maps.googleapis.com/maps/api/directions/json?origin='+latlon+'&destination=Montreal&key=AIzaSyCdyBGbzVhapHzqB0Z36fPwifM2kntO_tc',
+            headers: { }
+          };
+
+          axios(config)
+          .then(function (response) {
+            console.log(JSON.stringify(response.data));
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
         
           let img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=17&size=400x300&sensor=false&key=AIzaSyCdyBGbzVhapHzqB0Z36fPwifM2kntO_tc";
           b.style.display = 'none';
@@ -220,14 +241,20 @@
 
         }
 
-        
-
         setInterval(() => {
-          let bro = document.getElementById("bro");
           bro.alt == "set" ? bro.src = "./img/brother-back.jpg" : bro.src = "./img/brother-front.jpg";
           bro.alt == "set" ? bro.alt = "unset" : bro.alt = "set";
-          console.log(bro.src);
 
+          if(bro.alt == "set")
+          {
+            bro.classList.remove("unset");
+            bro.classList.add("set");
+          } else {
+            bro.classList.remove("set");
+            bro.classList.add("unset");
+          }
+          console.log(bro.src);
+ 
         }, 10000);
       </script>
 

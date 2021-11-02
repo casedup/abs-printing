@@ -90,15 +90,63 @@ h1 {
   padding: 0 0 15px 0;
   border: none;
   border-radius: 0;
+  
+}
+img.set {
+  
+  animation: smooth-transition 2s ease-in 0s;
+
+}
+img.unset {
+  
+  
+  animation: smooth-transition2 2s ease-in 0s ;
 }
 
 .thumbnail img {
+  
+  
   width: 30vw;
   height: 45vh;
   margin-bottom: 10px;
+  
 }
+
 footer {
   padding-top: 50px;
+}
+
+@keyframes smooth-transition {
+  0% {
+    opacity: 0.3;
+
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+    
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes smooth-transition2 {
+  0% {
+    opacity: 0.3;
+
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+    border: 1px solid black;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
