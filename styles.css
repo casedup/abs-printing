@@ -97,21 +97,20 @@ h1 {
 }
 img.set {
   
-  animation: smooth-transition 2s ease-in 0s;
+  animation: smooth-transition 2s linear  forwards;
 
 }
 img.unset {
   
   
-  animation: smooth-transition2 2s ease-in 0s ;
+  animation: smooth-transition2 2s linear forwards ;
 }
 
-.thumbnail img {
+img.img-thumbnail {
   
   
-  width: 30vw;
-  height: 45vh;
-  margin-bottom: 10px;
+  width: auto;
+  height: 500px;
   
 }
 
@@ -131,6 +130,9 @@ footer {
     opacity: 0.7;
     
   }
+  75% {
+    opacity: 0.9;
+  }
   100% {
     opacity: 1;
   }
@@ -145,7 +147,10 @@ footer {
   }
   50% {
     opacity: 0.7;
-    border: 1px solid black;
+    
+  }
+  75% {
+    opacity: 0.9;
   }
   100% {
     opacity: 1;
