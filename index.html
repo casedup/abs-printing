@@ -185,16 +185,12 @@
         </div>
     </section>
     <script>
+      document.addEventListener('DOMContentLoaded', setInterval(() => {
+        broImage();
+        ladyImage();
+        clockImage();
 
-
-        setInterval(() => {
-          broImage();
-          ladyImage();
-          clockImage();
-
-
- 
-        }, 10000);
+      }, 10000));
 
         function broImage() {
           bro.alt == "set" ? bro.src = "./img/brother-back.jpg" : bro.src = "./img/brother-front.jpg";
