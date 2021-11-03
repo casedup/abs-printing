@@ -163,7 +163,7 @@
 
               <div class="col-sm-4 shadow p-3 mb-5 bg-body rounded">
                 <div>
-                  <img src="./img/lady-obit-1.jpg" class=" img-thumbnail" alt="ABS Obituary 2">
+                  <img id="lady" src="./img/lady-obit-1.jpg" class=" img-thumbnail" alt="ABS Obituary 2">
                   <h4 class="display-5">Business Cards</h4>
                   <p class="lead">We offer custom designs for your business!</p>
 
@@ -174,7 +174,7 @@
 
               <div class="col-sm-4 shadow p-3 mb-5 bg-body rounded">
                 <div>
-                  <img src="./img/bg-clock-1.jpg" class="img-thumbnail" alt="ABS Clock Tower Photo">
+                  <img id="clock" src="./img/bg-clock-1.jpg" class="img-thumbnail" alt="ABS Clock Tower Photo">
                   <h4 class="display-5">Event Flyers</h4>
                   <p class="lead ">Let your advertisements POP!</p>
                   <br />
@@ -184,62 +184,19 @@
           </div>
         </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-      const x = document.getElementById("mapholder");
-      const a = document.getElementById("contact");
-      const b = document.getElementById("directions")
-      b.addEventListener('click', getLocation);
-      
-      function getLocation() {
-        try {
-          navigator.geolocation.getCurrentPosition(showPosition);
-          console.log(showPosition);
-        } catch {
-          x.innerHTML = err;
-        }
-      }
-      
-      function showPosition(position) {
 
-          
-          let latlon = position.coords.latitude + "," + position.coords.longitude;
-
-          var axios = require('axios');
-
-          var config = {
-            method: 'get',
-            url: 'https://maps.googleapis.com/maps/api/directions/json?origin='+latlon+'&destination=Montreal&key=AIzaSyCdyBGbzVhapHzqB0Z36fPwifM2kntO_tc',
-            headers: { }
-          };
-
-          axios(config)
-          .then(function (response) {
-            console.log(JSON.stringify(response.data));
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-        
-          let img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=17&size=400x300&sensor=false&key=AIzaSyCdyBGbzVhapHzqB0Z36fPwifM2kntO_tc";
-          b.style.display = 'none';
-          a.style.display = 'none';
-          x.style.display = 'block';
-          x.innerHTML = `<br><img src="${img_url}">`;
-          setTimeout(function() {
-
-            console.log("inside timeout");
-            b.style.display = 'block';
-            a.style.display = 'block';
-            x.style.display = 'none';
-            console.log("showing");
-
-          }, 5000);
-
-        }
 
         setInterval(() => {
+          broImage();
+          ladyImage();
+          clockImage();
+
+
+ 
+        }, 10000);
+
+        function broImage() {
           bro.alt == "set" ? bro.src = "./img/brother-back.jpg" : bro.src = "./img/brother-front.jpg";
           bro.alt == "set" ? bro.alt = "unset" : bro.alt = "set";
 
@@ -252,8 +209,40 @@
             bro.classList.add("unset");
           }
           console.log(bro.src);
- 
-        }, 10000);
+
+        }
+
+        function ladyImage() {
+          lady.alt == "set" ? lady.src = "./img/lady-obit.jpg" : lady.src = "./img/small-bg.jpg";
+          lady.alt == "set" ? lady.alt = "unset" : lady.alt = "set";
+
+          if(lady.alt == "set")
+          {
+            lady.classList.remove("unset");
+            lady.classList.add("set");
+          } else {
+            lady.classList.remove("set");
+            lady.classList.add("unset");
+          }
+          console.log(lady.src);        
+        }
+
+
+        function clockImage() {
+          clock.alt == "set" ? clock.src = "./img/bg-clock-1.jpg" : clock.src = "./img/abs-hero2.jpg";
+          clock.alt == "set" ? clock.alt = "unset" : clock.alt = "set";
+
+          if(clock.alt == "set")
+          {
+            clock.classList.remove("unset");
+            clock.classList.add("set");
+          } else {
+            clock.classList.remove("set");
+            clock.classList.add("unset");
+          }
+          console.log(clock.src);
+
+        }
       </script>
 
 </body>
