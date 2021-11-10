@@ -41,12 +41,14 @@ q:before, q:after {
 	content: none;
 }
 #directions, #contact {
+  opacity: 0.6;
   color: black;
   background: radial-gradient(circle farthest-side, #f3f3f3, #d5d7d8);
 }
 #directions:hover, #contact:hover {
   color: #fff;
   background: radial-gradient(circle farthest-side, #888888, #626263);
+  opacity: 0.9;
 }
 
 h4.display-5 {
