@@ -46,6 +46,7 @@ q:before, q:after {
 }
 #directions:hover, #contact:hover {
   color: #fff;
+  background: radial-gradient(circle farthest-side, #888888, #626263);
 }
 
 h4.display-5 {
