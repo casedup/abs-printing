@@ -114,8 +114,14 @@ img.img-thumbnail {
   
 }
 
-footer {
-  padding-top: 50px;
+.footer-text {
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+p a {
+  text-decoration: none;
+  color: green;
+  
 }
 
 @keyframes smooth-transition {
