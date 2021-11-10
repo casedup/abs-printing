@@ -40,6 +40,14 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+#directions, #contact {
+  color: black;
+  background: radial-gradient(circle farthest-side, #f3f3f3, #d5d7d8);
+}
+#directions:hover, #contact:hover {
+  color: #fff;
+}
+
 h4.display-5 {
   text-decoration: underline;
   text-decoration-thickness: 5%;
@@ -95,23 +103,19 @@ h1 {
   border-radius: 0;
   
 }
+h4.display {
+  padding-top: 15px;
+}
 img.set {
-  
   animation: smooth-transition 2s linear  forwards;
-
 }
 img.unset {
-  
-  
   animation: smooth-transition2 2s linear forwards ;
 }
 
 img.img-thumbnail {
-  
-  
   width: auto;
   height: 450px;
-  
 }
 
 .footer-text {
