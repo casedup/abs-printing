@@ -41,6 +41,7 @@ q:before, q:after {
 	content: none;
 }
 #directions, #contact {
+  transition: color 1.2s;
   opacity: 0.6;
   color: black;
   background: radial-gradient(circle farthest-side, #f3f3f3, #d5d7d8);
@@ -49,6 +50,7 @@ q:before, q:after {
   color: #fff;
   background: radial-gradient(circle farthest-side, #888888, #626263);
   opacity: 0.9;
+  cursor: pointer;
 }
 
 h4.display-5 {
@@ -120,15 +122,76 @@ img.img-thumbnail {
   width: auto;
   height: 450px;
 }
+footer {
+  background-image:
+    linear-gradient(
+      to right, 
+      #f1f3fc,
+      #f1f3fc 15%,
+      #fff 45%,
+      #fff 65%,
+      #f1f3fc 85%
+    );
+}
 
 .footer-text {
   text-decoration: none;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 p a {
   text-decoration: none;
   color: green;
+  padding: 10px;
+  margin: 0 auto;
   
+  
+}
+
+#witech {
+  opacity: 0.8;
+  animation: witech-link-color 10s ease-in-out alternate infinite ;
+
+  
+}
+
+
+@keyframes witech-link-color {
+  0% {
+
+    
+    opacity: 0.8;
+    color: rgb(14, 180, 14);
+
+  }
+
+  25% {
+    
+    color: rgb(31, 119, 31);
+  }
+
+  50% {
+    
+    opacity: 0.9;
+    color: rgb(224, 20, 20);
+
+  }
+
+
+  75% {
+    
+   
+    color: rgb(245, 191, 76);
+    
+    
+  }
+
+  100% {
+    
+    opacity: 1;
+    color: rgb(233, 233, 19);  
+
+  }
 }
 
 @keyframes smooth-transition {
@@ -162,9 +225,7 @@ p a {
     opacity: 0.7;
     
   }
-  75% {
-    opacity: 0.9;
-  }
+
   100% {
     opacity: 1;
   }
