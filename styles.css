@@ -82,8 +82,9 @@ a.navbar-brand {
   -moz-user-select: none;
   user-select: none;
 }
+
 img.hero-image {
-  padding: .25rem;
+  padding: 3px;
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: .28rem;
