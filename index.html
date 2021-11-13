@@ -192,12 +192,12 @@
       </div>
     </footer>
     <script>
-      document.addEventListener('DOMContentLoaded', setInterval(() => {
+      document.addEventListener('DOMContentLoaded', () => setInterval( function() {
         broImage();
         ladyImage();
         clockImage();
-
       }, 10000));
+      
 
         function broImage() {
           bro.alt == "set" ? bro.src = "./img/brother-back.jpg" : bro.src = "./img/brother-front.jpg";
@@ -211,7 +211,7 @@
             bro.classList.remove("set");
             bro.classList.add("unset");
           }
-          console.log(bro.src);
+          //console.log(bro.src);
 
         }
 
