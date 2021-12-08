@@ -1,0 +1,74 @@
+@keyframes witech-link-color {
+    0% {
+  
+      
+      
+      color: rgba(14, 180, 14, 0.8);
+  
+    }
+  
+    25% {
+      
+      color: rgb(78, 172, 78);
+    }
+  
+    50% {
+      
+      
+      color: rgba(224, 20, 20, 0.9);
+  
+    }
+  
+  
+    75% {
+      
+     
+      color: rgb(245, 191, 76);
+      
+      
+    }
+  
+    100% {
+      
+      
+      color: rgba(233, 233, 19, 1);  
+  
+    }
+  }
+  
+  @keyframes smooth-transition {
+    0% {
+      opacity: 0.3;
+  
+    }
+    25% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.7;
+      
+    }
+    75% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes smooth-transition2 {
+    0% {
+      opacity: 0.3;
+  
+    }
+    25% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.7;
+      
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }

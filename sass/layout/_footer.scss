@@ -1,0 +1,23 @@
+footer {
+    background-image:
+      linear-gradient(
+        to right, 
+        #f1f3fc,
+        #f1f3fc 15%,
+        #fff 45%,
+        #fff 65%,
+        #f1f3fc 85%
+      );
+  }
+  
+  .footer-text {
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  #witech {
+    opacity: 0.8;
+    animation: witech-link-color 12s ease-in-out alternate infinite ;
+  }
+  

@@ -40,44 +40,40 @@ q:before, q:after {
   content: '';
   content: none; }
 
-#directions, #contact {
-  transition: color 1.2s;
-  opacity: 0.6;
-  color: black;
-  background: radial-gradient(circle farthest-side, #f3f3f3, #d5d7d8); }
-
-#directions:hover, #contact:hover {
-  color: #fff;
-  background: radial-gradient(circle farthest-side, #888888, #626263);
-  opacity: 0.9;
-  cursor: pointer; }
+h1 {
+  text-align: center; }
 
 h4.display-5 {
   text-decoration: underline;
   text-decoration-thickness: 5%;
   margin-bottom: 10px; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.nav-item {
-  font-size: 15px; }
+h4.display {
+  padding-top: 15px; }
 
 i {
   color: white; }
 
-a.navbar-brand {
-  font-size: 20px;
-  margin: 5px 5px !important;
-  padding: 3px 5px; }
+p a {
+  text-decoration: none;
+  color: green;
+  padding: 10px;
+  margin: 0 auto; }
 
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none; }
+.heroSection--btn {
+  border: 1px black solid;
+  transition: color 1.2s;
+  opacity: 0.6;
+  color: black;
+  background: radial-gradient(circle farthest-side, #f3f3f3, #d5d7d8); }
+  .heroSection--btn__contact {
+    background: radial-gradient(circle farthest-side, #f3f3f3, #868788); }
+
+.heroSection__btn:hover {
+  color: #fff;
+  background: radial-gradient(circle farthest-side, #888888, #626263);
+  opacity: 0.9;
+  cursor: pointer; }
 
 img.hero-image {
   padding: 3px;
@@ -89,21 +85,10 @@ img.hero-image {
   width: 500px;
   margin-right: 10px; }
 
-h1 {
-  text-align: center; }
-
-.carousel {
-  width: 50vw;
-  margin: 0 auto;
-  background-color: silver; }
-
 .thumbnail {
   padding: 0 0 15px 0;
   border: none;
   border-radius: 0; }
-
-h4.display {
-  padding-top: 15px; }
 
 img.set {
   animation: smooth-transition 2s linear  forwards; }
@@ -115,6 +100,14 @@ img.img-thumbnail {
   width: auto;
   height: 450px; }
 
+.nav-item {
+  font-size: 15px; }
+
+a.navbar-brand {
+  font-size: 20px;
+  margin: 5px 5px !important;
+  padding: 3px 5px; }
+
 footer {
   background-image: linear-gradient(to right, #f1f3fc, #f1f3fc 15%, #fff 45%, #fff 65%, #f1f3fc 85%); }
 
@@ -122,12 +115,6 @@ footer {
   text-decoration: none;
   padding-top: 15px;
   padding-bottom: 15px; }
-
-p a {
-  text-decoration: none;
-  color: green;
-  padding: 10px;
-  margin: 0 auto; }
 
 #witech {
   opacity: 0.8;

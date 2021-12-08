@@ -1,0 +1,30 @@
+img.hero-image {
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .28rem;
+    height: auto;
+    height: 70vh;
+    width: 500px;
+    margin-right: 10px;
+  
+  }
+  
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+    
+  }
+  
+  img.set {
+    animation: smooth-transition 2s linear  forwards;
+  }
+  img.unset {
+    animation: smooth-transition2 2s linear forwards ;
+  }
+  
+  img.img-thumbnail {
+    width: auto;
+    height: 450px;
+  }
