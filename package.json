@@ -1,0 +1,22 @@
+{
+  "name": "abs-printing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./assets/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casedup/abs-printing.git"
+  },
+  "author": "west indies tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/casedup/abs-printing/issues"
+  },
+  "homepage": "https://github.com/casedup/abs-printing#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
