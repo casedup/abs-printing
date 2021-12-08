@@ -1,16 +1,29 @@
 .heroSection--btn {
-    border: 1px $color-primary solid;
-    transition: color 1.2s;
-    opacity: 0.6;
+  background: radial-gradient(circle farthest-side, $color-grey-light-1, $color-grey-light-2);
+  color: $color-primary;
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 2rem;
+    transition: transform .2s;
+    position: relative;
+    font-size: $default-font-size;
     color: $color-primary;
-    background: radial-gradient(circle farthest-side, #f3f3f3, #d5d7d8);
+
+  }
+
+
+    &:hover {
+      color: $color-secondary;
+      background: radial-gradient(circle farthest-side, #888888, #626263);
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
     &__contact {
         background: radial-gradient(circle farthest-side, #f3f3f3, #868788)
     }
-}
-.heroSection__btn:hover {
-  color: $color-secondary;
-  background: radial-gradient(circle farthest-side, #888888, #626263);
-  opacity: 0.9;
-  cursor: pointer;
 }

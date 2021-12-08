@@ -2,11 +2,11 @@
 @import "abstracts/variables";
 @import "base/base";
 @import "base/typography";
- 
+  
 
 @import "components/buttons.scss";
 @import "components/img.scss";
-
+@import "pages/home";
 
 @import "layout/_nav.scss";
 @import "layout/_footer.scss";
