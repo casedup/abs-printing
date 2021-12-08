@@ -1,15 +1,15 @@
 .heroSection--btn {
-    border: 1px black solid;
+    border: 1px $color-primary solid;
     transition: color 1.2s;
     opacity: 0.6;
-    color: black;
+    color: $color-primary;
     background: radial-gradient(circle farthest-side, #f3f3f3, #d5d7d8);
     &__contact {
         background: radial-gradient(circle farthest-side, #f3f3f3, #868788)
     }
 }
 .heroSection__btn:hover {
-  color: #fff;
+  color: $color-secondary;
   background: radial-gradient(circle farthest-side, #888888, #626263);
   opacity: 0.9;
   cursor: pointer;
