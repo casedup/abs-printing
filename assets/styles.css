@@ -48,6 +48,9 @@ q:before, q:after {
   content: '';
   content: none; }
 
+hr {
+  background-color: #fca311; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -130,7 +133,7 @@ img.img-thumbnail {
       position: absolute;
       bottom: -100%;
       left: 65%;
-      width: 30rem; }
+      max-width: 30rem; }
   .heroSection--contactInfo {
     font-family: "Montserrat", sans-serif; }
     .heroSection--contactInfo h3 {
@@ -140,9 +143,6 @@ img.img-thumbnail {
     .heroSection--contactInfo p {
       font-size: 1.8rem;
       display: inline-block; }
-  .heroSection hr {
-    background-color: #fca311;
-    margin-bottom: 3rem; }
   .heroSection-heroContainer {
     text-align: center; }
   .heroSection--h1 {
@@ -156,6 +156,20 @@ img.img-thumbnail {
     font-weight: 300; }
   .heroSection--em {
     font-weight: 200; }
+
+.portfolioSection {
+  font-family: "Montserrat", sans-serif; }
+  .portfolioSection h1 {
+    font-family: "Lato", cursive;
+    font-size: 4rem;
+    font-weight: 600; }
+  .portfolioSection p {
+    font-size: 1.8rem;
+    display: inline-block; }
+
+.home-hr {
+  background-color: #fca311;
+  margin-bottom: 3rem; }
 
 ul {
   list-style-type: none;
