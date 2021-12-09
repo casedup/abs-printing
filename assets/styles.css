@@ -158,14 +158,18 @@ img.img-thumbnail {
     font-weight: 200; }
 
 .portfolioSection {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Lato", cursive; }
   .portfolioSection h1 {
-    font-family: "Lato", cursive;
     font-size: 4rem;
     font-weight: 600; }
+  .portfolioSection h4 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 600; }
   .portfolioSection p {
-    font-size: 1.8rem;
-    display: inline-block; }
+    font-size: 2rem;
+    display: inline-block;
+    font-weight: 300; }
 
 .home-hr {
   background-color: #fca311;
@@ -197,15 +201,17 @@ li {
 
 footer {
   background-image: linear-gradient(to right, #f1f3fc, #f1f3fc 15%, #fff 45%, #fff 65%, #f1f3fc 85%); }
-
-.footer-text {
-  text-decoration: none;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
-
-#witech {
-  opacity: 0.8;
-  animation: witech-link-color 12s ease-in-out alternate infinite; }
+  footer .heroSection-footer--container {
+    text-align: center; }
+  footer .heroSection-footer--a {
+    opacity: 0.8;
+    animation: witech-link-color 12s ease-in-out alternate infinite; }
+  footer .heroSection-footer--p {
+    text-decoration: none;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #000;
+    font-size: 2rem; }
 
 @keyframes witech-link-color {
   0% {

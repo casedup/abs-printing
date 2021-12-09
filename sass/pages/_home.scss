@@ -55,20 +55,26 @@
 }
 
 .portfolioSection {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lato", cursive;
         
 
         & h1 {
-            font-family: "Lato", cursive;
+            
             font-size: 4rem;
             font-weight: 600;
             
             
             
         }
+        & h4 {
+            margin-top: 1rem;
+            font-size: 3rem;
+            font-weight: 600;
+        }
         & p {
-            font-size: 1.8rem;
+            font-size: 2rem;
             display: inline-block;
+            font-weight: 300;
         }
 
 }
