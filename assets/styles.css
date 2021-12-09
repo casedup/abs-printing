@@ -129,7 +129,8 @@ img.img-thumbnail {
   font-family: "Lato", sans-serif;
   color: #14213d; }
   .heroSection--image {
-    position: relative; }
+    position: relative;
+    overflow: visible; }
     .heroSection--image img {
       position: absolute;
       bottom: -100%;
