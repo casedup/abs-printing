@@ -19,7 +19,7 @@ ul {
 
 li {
     float: left;
-    border-right:.1rem solid $color-grey-light-1;
+    border-right:.1px solid $prime-gold;
     font-family: "Lato", sans-serif;
 
     &:last-child {
@@ -35,8 +35,8 @@ li {
     padding: 1rem;
     text-decoration: none;
   }
-  & a:hover:not(.active) {
-    background-color: $prime-gold;
+  & a:hover {
+    background-color: $color-grey-light-1;
   }
 }
 

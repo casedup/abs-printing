@@ -1,6 +1,11 @@
 .heroSection {
     font-family: "Lato", sans-serif;
     color: $prime-blue;
+    & hr{
+
+        background-color: $prime-gold;
+        margin-bottom: 3rem;
+    }
 
     &-heroContainer {
         text-align: center;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,700&family=Montserrat:wght@100;400;500;700;900&family=Roboto:wght@400;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -76,7 +76,9 @@ p a {
 
 .heroSection--btn {
   background: radial-gradient(circle farthest-side, #f7f7f7, #eee);
-  color: #000; }
+  color: #000;
+  margin-bottom: 3rem;
+  margin-top: 2rem; }
   .heroSection--btn:link, .heroSection--btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -89,11 +91,10 @@ p a {
     color: #000; }
   .heroSection--btn:hover {
     color: #fff;
-    background: radial-gradient(circle farthest-side, #888888, #626263);
+    background: radial-gradient(circle farthest-side, #eee, #f7f7f7);
     opacity: 0.9;
-    cursor: pointer; }
-  .heroSection--btn__contact {
-    background: radial-gradient(circle farthest-side, #f3f3f3, #868788); }
+    cursor: pointer;
+    color: #fca311; }
 
 img.hero-image {
   padding: .3rem;
@@ -123,6 +124,9 @@ img.img-thumbnail {
 .heroSection {
   font-family: "Lato", sans-serif;
   color: #14213d; }
+  .heroSection hr {
+    background-color: #fca311;
+    margin-bottom: 3rem; }
   .heroSection-heroContainer {
     text-align: center; }
   .heroSection--h1 {
@@ -147,7 +151,7 @@ ul {
 
 li {
   float: left;
-  border-right: 0.1rem solid #f7f7f7;
+  border-right: 0.1px solid #fca311;
   font-family: "Lato", sans-serif; }
   li:last-child {
     border-right: none; }
@@ -159,8 +163,8 @@ li {
     text-align: center;
     padding: 1rem;
     text-decoration: none; }
-  li a:hover:not(.active) {
-    background-color: #fca311; }
+  li a:hover {
+    background-color: #f7f7f7; }
 
 footer {
   background-image: linear-gradient(to right, #f1f3fc, #f1f3fc 15%, #fff 45%, #fff 65%, #f1f3fc 85%); }

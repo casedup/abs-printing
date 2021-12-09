@@ -1,6 +1,9 @@
 .heroSection--btn {
   background: radial-gradient(circle farthest-side, $color-grey-light-1, $color-grey-light-2);
   color: $color-primary;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -18,12 +21,9 @@
 
     &:hover {
       color: $color-secondary;
-      background: radial-gradient(circle farthest-side, #888888, #626263);
+      background: radial-gradient(circle farthest-side, $color-grey-light-2, $color-grey-light-1);
       opacity: 0.9;
       cursor: pointer;
-    }
-
-    &__contact {
-        background: radial-gradient(circle farthest-side, #f3f3f3, #868788)
+      color: $prime-gold;
     }
 }
