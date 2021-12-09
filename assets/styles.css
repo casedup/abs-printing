@@ -88,14 +88,15 @@ p a {
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 2rem;
-    transition: transform .2s;
+    transition: background 1.3s, color .5s;
     position: relative;
     font-size: 1.6rem;
-    color: #000; }
+    color: #000;
+    opacity: .8; }
   .heroSection--btn:hover {
     color: #fff;
-    background: radial-gradient(circle farthest-side, #eee, #f7f7f7);
-    opacity: 0.9;
+    background: transparent;
+    opacity: 1;
     cursor: pointer;
     color: #fca311; }
 
@@ -133,7 +134,7 @@ img.img-thumbnail {
       position: absolute;
       bottom: -100%;
       left: 65%;
-      max-width: 30rem; }
+      max-width: 33rem; }
   .heroSection--contactInfo {
     font-family: "Montserrat", sans-serif; }
     .heroSection--contactInfo h3 {
@@ -185,7 +186,8 @@ ul {
 li {
   float: left;
   border-right: 0.1px solid #fca311;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  transition: background-color .4s, color .3s; }
   li:last-child {
     border-right: none; }
   li a {

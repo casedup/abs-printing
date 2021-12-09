@@ -11,18 +11,19 @@
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 2rem;
-    transition: transform .2s;
+    transition: background 1.3s, color .5s;
     position: relative;
     font-size: $default-font-size;
     color: $color-primary;
+    opacity: .8;
 
   }
 
 
     &:hover {
       color: $color-secondary;
-      background: radial-gradient(circle farthest-side, $color-grey-light-2, $color-grey-light-1);
-      opacity: 0.9;
+      background: transparent;
+      opacity: 1;
       cursor: pointer;
       color: $prime-gold;
     }

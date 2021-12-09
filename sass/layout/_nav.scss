@@ -21,6 +21,7 @@ li {
     float: left;
     border-right:.1px solid $prime-gold;
     font-family: "Lato", sans-serif;
+    transition: background-color .4s, color .3s;
 
     &:last-child {
     border-right: none;
