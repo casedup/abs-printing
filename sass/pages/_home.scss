@@ -1,6 +1,36 @@
 .heroSection {
     font-family: "Lato", sans-serif;
     color: $prime-blue;
+
+    &--image {
+        position: relative;
+        img {
+            position: absolute;
+            bottom: -100%;
+            left: 65%;
+            width : 30rem;
+
+        }
+            
+    }
+    
+    &--contactInfo {
+        font-family: "Montserrat", sans-serif;
+        
+
+        & h3 {
+            font-family: "Anton", cursive;
+            font-size: 2rem;
+            // font-weight: 200;
+            display: inline-block;
+            
+        }
+        & p {
+            font-size: 1.8rem;
+            display: inline-block;
+        }
+
+    }
     & hr{
 
         background-color: $prime-gold;
@@ -24,7 +54,7 @@
         font-weight: 300;
     }
     &--em {
-        font-style: italic;
-        font-weight: 500;
+        // font-style: italic;
+        font-weight: 200;
     }
 }
