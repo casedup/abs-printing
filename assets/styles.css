@@ -124,10 +124,11 @@ p a {
     opacity: 1; } }
 
 .heroSection--btn {
-  background: radial-gradient(circle farthest-side, #f7f7f7, #eee);
+  background: radial-gradient(circle farthest-side, #fff, #e9e9e9);
   color: #000;
   margin-bottom: 3rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
   .heroSection--btn:link, .heroSection--btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -145,11 +146,13 @@ p a {
     opacity: 1;
     cursor: pointer;
     color: #fca311; }
+  .heroSection--btn:active {
+    box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.5); }
 
 img.hero-image {
   padding: .3rem;
   background-color: #fff;
-  border: .1rem solid #dee2e6;
+  border: 0.1rem solid rgba(252, 163, 17, 0.25);
   border-radius: .28rem;
   height: auto;
   height: 70vh;
@@ -174,6 +177,7 @@ img.unset {
   animation: smooth-transition2 2s linear forwards; }
 
 img.img-thumbnail {
+  border: 0.1rem solid rgba(252, 163, 17, 0.25);
   width: auto;
   height: 45rem; }
 
@@ -200,7 +204,7 @@ li {
     text-decoration: none;
     transition: all .3s; }
   li a:hover {
-    background-color: #f7f7f7;
+    background-color: #fff;
     color: #fca311;
     transform: scale(1.1); }
 

@@ -1,7 +1,7 @@
 img.hero-image {
     padding: .3rem;
     background-color: $color-secondary;
-    border: .1rem solid #dee2e6;
+    border: .1rem solid rgba($prime-gold, .25);
     border-radius: .28rem;
     height: auto;
     height: 70vh;
@@ -33,6 +33,7 @@ img.hero-image {
   }
   
   img.img-thumbnail {
+    border: .1rem solid rgba($prime-gold, .25);
     width: auto;
     height: 45rem;
   }

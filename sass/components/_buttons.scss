@@ -1,8 +1,9 @@
 .heroSection--btn {
-  background: radial-gradient(circle farthest-side, $color-grey-light-1, $color-grey-light-2);
+  background: radial-gradient(circle farthest-side, $color-grey-light-1, $color-grey-light-3);
   color: $color-primary;
   margin-bottom: 3rem;
   margin-top: 2rem;
+  box-shadow: 0 .5rem 1rem rgba($color-primary, 0.3);
 
   &:link,
   &:visited {
@@ -26,5 +27,8 @@
       opacity: 1;
       cursor: pointer;
       color: $prime-gold;
+    }
+    &:active {
+      box-shadow: 0 .3rem .7rem rgba($color-primary, 0.5);
     }
 }
