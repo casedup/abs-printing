@@ -1,19 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => setInterval( function() {
-    broImage();
-    ladyImage();
-    clockImage();
+let broImg = bro.getAttribute("brotherImage");
+let ladyImg = lady.getAttribute("ladyImage");
+let clockImg = clock.getAttribute("clockImage");
+document.addEventListener('DOMContentLoaded', () => setInterval( async function() {
+    await broImage();
+    await ladyImage();
+    await clockImage();
   }, 10000));
   
 
     function broImage() {
-      bro.alt == "set" ? bro.src = "./img/brother-back.jpg" : bro.src = "./img/brother-front.jpg";
-      bro.alt == "set" ? bro.alt = "unset" : bro.alt = "set";
-
-      if(bro.alt == "set")
+      if(broImg == "set")
       {
+        bro.src = "./img/brother-front.jpg";
+        broImg = "unset";
         bro.classList.remove("unset");
         bro.classList.add("set");
       } else {
+        bro.src = "./img/brother-back.jpg"
+        broImg = "set"
         bro.classList.remove("set");
         bro.classList.add("unset");
       }
@@ -22,14 +26,16 @@ document.addEventListener('DOMContentLoaded', () => setInterval( function() {
     }
 
     function ladyImage() {
-      lady.alt == "set" ? lady.src = "./img/abs-card1.jpg" : lady.src = "./img/receipt1.jpg";
-      lady.alt == "set" ? lady.alt = "unset" : lady.alt = "set";
 
-      if(lady.alt == "set")
+      if(ladyImg == "set")
       {
+        lady.src = "./img/abs-card1.jpg";
+        ladyImg = "unset";
         lady.classList.remove("unset");
         lady.classList.add("set");
       } else {
+        lady.src = "./img/receipt1.jpg";
+        ladyImg = "set";
         lady.classList.remove("set");
         lady.classList.add("unset");
       }
@@ -38,14 +44,15 @@ document.addEventListener('DOMContentLoaded', () => setInterval( function() {
 
 
     function clockImage() {
-      clock.alt == "set" ? clock.src = "./img/celebration-front1.jpg" : clock.src = "./img/celebration-back.jpg";
-      clock.alt == "set" ? clock.alt = "unset" : clock.alt = "set";
-
-      if(clock.alt == "set")
+      if(clockImg == "set")
       {
+        clock.src = "./img/celebration-front1.jpg";
+        clockImg = "unset";
         clock.classList.remove("unset");
         clock.classList.add("set");
       } else {
+        clock.src = "./img/celebration-back.jpg";
+        clockImg = "set";
         clock.classList.remove("set");
         clock.classList.add("unset");
       }
