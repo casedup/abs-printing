@@ -166,8 +166,11 @@ img.hero-image {
     img.hero-image {
       visibility: hidden; } }
 
+.row {
+  --bs-gutter-x: 0 !important; }
+
 .thumbnail {
-  padding: 0 0 1.5rem 0;
+  padding: 0 0 1.2rem 0;
   border: none;
   border-radius: 0; }
 
@@ -214,14 +217,20 @@ footer .heroSection-footer--container {
 
 footer .heroSection-footer--a {
   opacity: 0.8;
-  animation: witech-link-color 12s ease-in-out alternate infinite; }
+  animation: witech-link-color 12s ease-in-out alternate infinite;
+  font-family: "Roboto";
+  font-weight: 700; }
 
 footer .heroSection-footer--p {
   text-decoration: none;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   color: #000;
-  font-size: 2rem; }
+  font-size: 1.8rem;
+  transition: transform .8s;
+  display: inline-block; }
+  footer .heroSection-footer--p:hover {
+    transform: scale(1.1); }
 
 .heroSection {
   font-family: "Lato", sans-serif;
@@ -271,7 +280,7 @@ footer .heroSection-footer--p {
     font-weight: 600; }
   .portfolioSection h4 {
     margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 600; }
   .portfolioSection p {
     font-size: 2rem;

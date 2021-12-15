@@ -7,14 +7,21 @@ footer {
         &--a {
           opacity: 0.8;
           animation: witech-link-color 12s ease-in-out alternate infinite ;
-
+          font-family: "Roboto";
+          font-weight: 700;
         }
         &--p {
           text-decoration: none;
           padding-top: 1.5rem;
           padding-bottom: 1.5rem;
           color: $color-primary;
-          font-size: 2rem;
+          font-size: 1.8rem;
+          transition: transform .8s;
+          display: inline-block;
+          &:hover {
+            transform: scale(1.1);
+          }
+          
           
 
         }

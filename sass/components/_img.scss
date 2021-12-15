@@ -17,9 +17,13 @@ img.hero-image {
 
   
   }
+  .row {
+    --bs-gutter-x: 0 !important;
+
+}
   
   .thumbnail {
-    padding: 0 0 1.5rem 0;
+    padding: 0 0 1.2rem 0;
     border: none;
     border-radius: 0;
     
