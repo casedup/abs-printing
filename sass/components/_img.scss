@@ -7,6 +7,14 @@ img.hero-image {
     height: 70vh;
     width: 50rem;
     margin-right: 1rem;
+
+    @media (min-width: 56.25em) {
+      visibility: visible;
+     }
+    @media (max-width: 62em) {
+      visibility: hidden;
+     }
+
   
   }
   
