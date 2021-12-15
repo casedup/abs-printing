@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,700&family=Montserrat:wght@100;400;500;700;900&family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700&family=Montserrat:wght@100;400;500;700;900&family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -186,7 +186,6 @@ ul {
 
 li {
   float: left;
-  border-right: 0.1px solid #fca311;
   font-family: "Lato", sans-serif;
   transition: background-color .4s, color .3s; }
   li:last-child {
@@ -194,27 +193,30 @@ li {
   li a {
     color: #14213d;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     display: block;
     text-align: center;
     padding: 1rem;
-    text-decoration: none; }
-  li a:hover {
-    background-color: #f7f7f7; }
-
-footer {
-  background-image: linear-gradient(to right, #f1f3fc, #f1f3fc 15%, #fff 45%, #fff 65%, #f1f3fc 85%); }
-  footer .heroSection-footer--container {
-    text-align: center; }
-  footer .heroSection-footer--a {
-    opacity: 0.8;
-    animation: witech-link-color 12s ease-in-out alternate infinite; }
-  footer .heroSection-footer--p {
     text-decoration: none;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    color: #000;
-    font-size: 2rem; }
+    transition: all .3s; }
+  li a:hover {
+    background-color: #f7f7f7;
+    color: #fca311;
+    transform: scale(1.1); }
+
+footer .heroSection-footer--container {
+  text-align: center; }
+
+footer .heroSection-footer--a {
+  opacity: 0.8;
+  animation: witech-link-color 12s ease-in-out alternate infinite; }
+
+footer .heroSection-footer--p {
+  text-decoration: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #000;
+  font-size: 2rem; }
 
 .heroSection {
   font-family: "Lato", sans-serif;
@@ -233,8 +235,10 @@ footer {
   .heroSection--contactInfo {
     font-family: "Montserrat", sans-serif; }
     .heroSection--contactInfo h3 {
-      font-family: "Anton", cursive;
+      font-family: "Roboto", cursive;
       font-size: 2rem;
+      font-weight: 700;
+      font-style: bold;
       display: inline-block; }
     .heroSection--contactInfo p {
       font-size: 1.8rem;
@@ -251,7 +255,8 @@ footer {
     font-size: 2.6rem;
     font-weight: 300; }
   .heroSection--em {
-    font-weight: 200; }
+    font-weight: 300;
+    font-style: italic; }
 
 .portfolioSection {
   font-family: "Lato", cursive; }

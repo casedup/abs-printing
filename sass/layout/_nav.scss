@@ -15,13 +15,15 @@ ul {
   overflow: hidden;
   background-color: $prime-grey;
   
+  
 }
 
 li {
     float: left;
-    border-right:.1px solid $prime-gold;
+    // border-right:.1px solid $prime-gold;
     font-family: "Lato", sans-serif;
     transition: background-color .4s, color .3s;
+    
 
     &:last-child {
     border-right: none;
@@ -30,14 +32,17 @@ li {
   & a {
     color: $prime-blue;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     display: block;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    transition: all .3s;
   }
   & a:hover {
     background-color: $color-grey-light-1;
+    color: $prime-gold;
+    transform: scale(1.1);
   }
 }
 

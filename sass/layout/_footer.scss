@@ -1,13 +1,5 @@
 footer {
-    background-image:
-      linear-gradient(
-        to right, 
-        #f1f3fc,
-        #f1f3fc 15%,
-        $color-secondary 45%,
-        $color-secondary 65%,
-        #f1f3fc 85%
-      );
+    
       & .heroSection-footer {
         &--container {
           text-align: center;
