@@ -1,10 +1,10 @@
 let broImg = bro.getAttribute("brotherImage");
 let ladyImg = lady.getAttribute("ladyImage");
 let clockImg = clock.getAttribute("clockImage");
-document.addEventListener('DOMContentLoaded', () => setInterval( async function() {
-    await broImage();
-    await ladyImage();
-    await clockImage();
+document.addEventListener('DOMContentLoaded', () => setInterval( function() {
+     broImage();
+     ladyImage();
+     clockImage();
   }, 10000));
   
 
