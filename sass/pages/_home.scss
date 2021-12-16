@@ -40,12 +40,14 @@
 
     &-heroContainer {
         text-align: center;
+        animation: .8s moveInBottom linear;
     }
     &--h1 {
         font-size: 4.2rem;
         font-weight: 700;
         margin-bottom: 2rem;
-    }
+        animation:  smooth-transition .8s linear backwards;
+    } 
     &--strong {
         font-weight: 600;
     }
@@ -55,7 +57,7 @@
         font-weight: 300;
     }
     &--em {
-        
+        animation:  smooth-transition .8s linear backwards;
         font-weight: 300;
         font-style: italic;
     }

@@ -14,6 +14,12 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: $prime-grey;
+  @include clearfix;
+  &:first-child {
+    animation: .8s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
+
+ 
+  }
 }
 
 li {
@@ -21,8 +27,10 @@ li {
     // border-right:.1px solid $prime-gold;
     font-family: "Lato", sans-serif;
     transition: background-color .4s, color .3s;
+    & + li {
+      animation: 1s moveInLeft cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
     
-
     &:last-child {
     border-right: none;
     

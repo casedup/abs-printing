@@ -1,36 +1,13 @@
 @keyframes witech-link-color {
-    0% {
+    0% {color: rgba($witech-0, 0.8);}
   
-      
-      
-      color: rgba($witech-0, 0.8);
+    25% {color: $witech-25;}
   
-    }
+    50% {color: rgba($witech-50, 0.9);}
+
+    75% {color: $witech-75;}
   
-    25% {
-      
-      color: $witech-25;
-    }
-  
-    50% {
-      
-      
-      color: rgba($witech-50, 0.9);
-  
-    }
-  
-  
-    75% {
-      
-     
-      color: $witech-75;
-      
-      
-    }
-  
-    100% {
-      color: rgba($witech-100, 1);  
-    }
+    100% {color: rgba($witech-100, 1);}
   }
   
   @keyframes smooth-transition {
@@ -69,3 +46,56 @@
       opacity: 1;
     }
   }
+  @keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(1rem);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100);
+
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(-1rem);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+    
+}
