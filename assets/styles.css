@@ -247,10 +247,10 @@ li {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    transition: all .3s; }
+    transition: all .6s; }
   li a:hover {
     color: #fca311;
-    transform: scale(0.9); }
+    transform: perspective(80rem) scale(0.9); }
 
 footer .heroSection-footer--container {
   text-align: center; }

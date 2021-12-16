@@ -30,10 +30,8 @@ li {
     & + li {
       animation: 1s moveInLeft cubic-bezier(0.6, -0.28, 0.735, 0.045);
     }
-    
     &:last-child {
-    border-right: none;
-    
+    border-right: none;   
   }
   & a {
     color: $color-primary;
@@ -43,12 +41,12 @@ li {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    transition: all .3s;
+    transition: all .6s;
   }
   & a:hover {
     // background-color: $color-grey-light-3;
     color: $prime-gold;
-    transform: scale(.9);
+    transform: perspective(80rem) scale(.9);
   }
 }
 
