@@ -3,7 +3,7 @@
   color: $color-primary;
   margin-bottom: 3rem;
   margin-top: 2rem;
-  box-shadow: 0 .5rem 1rem rgba($color-primary, 0.3);
+  box-shadow: -.5rem .5rem .5rem rgba($color-primary, 0.2);
 
   &:link,
   &:visited {
@@ -27,9 +27,9 @@
       opacity: 1;
       cursor: pointer;
       color: $prime-gold;
-      box-shadow: 0 .5rem 1rem rgba($color-primary, 0.4);
+      box-shadow: -.5rem .5rem .5rem rgba($color-primary, 0.2);
     }
     &:active {
-      box-shadow: 0 .28rem .7rem rgba($color-primary, 0.5);
+      box-shadow: -.25rem .25rem .25rem rgba($color-primary, 0.5);
     }
 }
