@@ -63,6 +63,9 @@ q:before, q:after {
 hr {
   background-color: #fca311; }
 
+.active {
+  text-transform: uppercase; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
