@@ -9,5 +9,20 @@
         "titleBar.activeBackground": "#431C1B",
         "window.activeBorder": "#73A8C7",
         "window.inactiveBorder": "#366987"
-    }
+    },
+    "color-highlight.sass.includePaths": ["../sass/*/_*.scss" ],
+    "colorize.include": [
+      "**/*.css",
+      "../sass/*/_*.scss",
+      "../sass/_*.scss",
+      "**/*.sass",
+      "**/*.less",
+      "**/*.styl",
+
+      
+    ],
+    "color-highlight.languages": [
+      "*"
+    ]
+
 }
