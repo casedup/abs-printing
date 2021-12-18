@@ -15,11 +15,33 @@ ul {
   overflow: hidden;
   background-color: $prime-grey;
   @include clearfix;
-  &:first-child {
-    animation: .8s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045) ;
 
- 
-  }
+  & li:first-child {
+
+      a {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-image: linear-gradient(to right, $prime-blue, $prime-gold);
+        display: inline-block;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        letter-spacing: .2rem;
+        transition: .2s transform;
+        text-shadow: .5rem 1rem 2rem rgba($color-primary, .2);
+
+      }
+
+    }
+  & li:not(:first-child) {
+
+      & a:hover {
+        // background-color: $color-grey-light-3;
+        color: $prime-gold;
+        transform: perspective(80rem) scale(.9);
+      }
+    }
 }
 
 li {
@@ -27,9 +49,11 @@ li {
     // border-right:.1px solid $prime-gold;
     font-family: "Lato", sans-serif;
     transition: background-color .4s, color .3s;
+    
     & + li {
-      animation: 1s moveInLeft cubic-bezier(0.6, -0.28, 0.735, 0.045);
+      animation: 1s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045);
     }
+
     &:last-child {
     border-right: none;   
   }
@@ -43,11 +67,7 @@ li {
     text-decoration: none;
     transition: all .6s;
   }
-  & a:hover {
-    // background-color: $color-grey-light-3;
-    color: $prime-gold;
-    transform: perspective(80rem) scale(.9);
-  }
+  
 }
 
 // .active {

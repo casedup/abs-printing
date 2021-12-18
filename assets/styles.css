@@ -228,15 +228,28 @@ ul {
     content: "";
     display: table;
     clear: both; }
-  ul:first-child {
-    animation: 0.8s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+  ul li:first-child a {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #14213d, #fca311);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: .2s transform;
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  ul li:not(:first-child) a:hover {
+    color: #fca311;
+    transform: perspective(80rem) scale(0.9); }
 
 li {
   float: left;
   font-family: "Lato", sans-serif;
   transition: background-color .4s, color .3s; }
   li + li {
-    animation: 1s moveInLeft cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+    animation: 1s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045); }
   li:last-child {
     border-right: none; }
   li a {
@@ -248,9 +261,6 @@ li {
     padding: 1rem;
     text-decoration: none;
     transition: all .6s; }
-  li a:hover {
-    color: #fca311;
-    transform: perspective(80rem) scale(0.9); }
 
 footer .heroSection-footer--container {
   text-align: center; }
