@@ -31,6 +31,7 @@ ul {
         letter-spacing: .2rem;
         transition: .2s transform;
         text-shadow: .5rem 1rem 2rem rgba($color-primary, .2);
+        animation:1.2s animate-pop  cubic-bezier(.26, .53, .74, 1.48);
 
       }
 
@@ -45,27 +46,11 @@ ul {
     }
 
   // & li:nth-child(2) {
-  //   @include respond(tab-land) {
-  //    opacity: 0;
-  //   }
-  //   &::before {
-  //     content: "stclair@absprinting.vi";
-  //     font-size: 1.8rem;
-  //     font-weight: 600;
-  //     display: inline-block;
-  //     height: 100%;
-  //     width: 100%;
-  //     position: absolute;
-  //     top: 3rem;
-  //     left: 83%;
-  //     z-index: 22;
-
-
-  //     @include respond(tab-port) {
-  //       z-index: -22;
-  //     }
-
-  //   }
+  //   animation: 1s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    
+  // }
+  // & li:nth-child(3) {
+  //   animation: 1s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045);
     
   // }
   // & li:nth-child(3) {
@@ -96,9 +81,9 @@ ul {
     transition: background-color .4s, color .3s;
     @include clearfix;
     
-    & + li {
-      animation: 1s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045);
-    }
+    // & + li {
+    //   animation: 1s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    // }
 
     &:last-child {
     border-right: none;   
@@ -112,8 +97,6 @@ ul {
     padding: 1rem;
     text-decoration: none;
     transition: all .6s;
-
-
   }
   
 }
