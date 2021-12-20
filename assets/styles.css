@@ -281,7 +281,8 @@ footer .heroSection-footer--p {
       left: 70rem;
       height: 50rem;
       max-width: 30%;
-      border: 1px solid #fca311; }
+      padding: .2rem;
+      border: 1px solid rgba(252, 163, 17, 0.25); }
       @media (min-width: 56.25em) {
         .heroSection--image img {
           visibility: visible; } }
@@ -290,7 +291,7 @@ footer .heroSection-footer--p {
           visibility: hidden; } }
       @media (min-width: 1200px) and (max-width: 1800px) {
         .heroSection--image img {
-          left: 90rem; } }
+          left: 92rem; } }
   .heroSection--contactInfo {
     font-family: "Montserrat", sans-serif; }
     .heroSection--contactInfo h3 {
