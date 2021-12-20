@@ -193,6 +193,9 @@ p a {
 .delay-3 {
   animation-delay: 0.8s; }
 
+.delay-4 {
+  animation-delay: 4.2s; }
+
 .heroSection--btn {
   background: radial-gradient(circle farthest-side, #fff, rgba(252, 163, 17, 0.05));
   color: #000;
@@ -262,7 +265,7 @@ ul {
     letter-spacing: .2rem;
     transition: .2s transform;
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    animation: 1.2s animate-pop cubic-bezier(0.26, 0.53, 0.74, 1.48); }
+    animation: 1.2s animate-pop 0.5s cubic-bezier(0.26, 0.53, 0.74, 1.48) backwards; }
   ul li:not(:first-child) a:hover {
     color: #fca311;
     transform: perspective(80rem) scale(0.9); }
