@@ -9,6 +9,7 @@
 //   padding: .3rem .3rem;
 // }
 ul {
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -42,13 +43,58 @@ ul {
         transform: perspective(80rem) scale(.9);
       }
     }
-}
 
-li {
+  // & li:nth-child(2) {
+  //   @include respond(tab-land) {
+  //    opacity: 0;
+  //   }
+  //   &::before {
+  //     content: "stclair@absprinting.vi";
+  //     font-size: 1.8rem;
+  //     font-weight: 600;
+  //     display: inline-block;
+  //     height: 100%;
+  //     width: 100%;
+  //     position: absolute;
+  //     top: 3rem;
+  //     left: 83%;
+  //     z-index: 22;
+
+
+  //     @include respond(tab-port) {
+  //       z-index: -22;
+  //     }
+
+  //   }
+    
+  // }
+  // & li:nth-child(3) {
+  //   &::before {
+  //     content: "340-244-2137";
+  //     font-size: 1.8rem;
+  //     font-weight: 600;
+  //     display: inline-block;
+  //     height: 100%;
+  //     width: 100%;
+  //     position: absolute;
+  //     top: 3rem;
+  //     left: 70%;
+  //     z-index: 1;
+
+  //     @include respond(tab-port) {
+  //       z-index: -22;
+  //     }
+
+  //   }
+
+
+  // }
+  & li {
     float: left;
     // border-right:.1px solid $prime-gold;
     font-family: "Lato", sans-serif;
     transition: background-color .4s, color .3s;
+    @include clearfix;
     
     & + li {
       animation: 1s moveInRight cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -66,9 +112,14 @@ li {
     padding: 1rem;
     text-decoration: none;
     transition: all .6s;
+
+
   }
   
 }
+}
+
+
 
 // .active {
 //   background-color: #1e39b1;
