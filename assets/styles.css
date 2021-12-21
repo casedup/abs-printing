@@ -151,10 +151,10 @@ p a {
 @keyframes animate-pop {
   0% {
     opacity: 0;
-    transform: scale(0.5, 0.5); }
+    transform: scale(0.5, 0.5) perspective(1000rem); }
   100% {
     opacity: 1;
-    transform: scale(1, 1); } }
+    transform: scale(1, 1) perspective(100rem); } }
 
 .animate {
   animation-duration: 0.75s;
@@ -194,7 +194,7 @@ p a {
   animation-delay: 0.8s; }
 
 .delay-4 {
-  animation-delay: 4.2s; }
+  animation-delay: 0.999s; }
 
 .heroSection--btn {
   background: radial-gradient(circle farthest-side, #fff, rgba(252, 163, 17, 0.05));
