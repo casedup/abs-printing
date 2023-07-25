@@ -15,7 +15,7 @@
             border: 1px solid rgba($prime-gold, .25);
 
             @include respond(tab-port) {
-                visibility: visible;
+                visibility: hidden;
             }
             @include respond(tab-land) {
                 visibility: hidden;
